@@ -1,12 +1,9 @@
 
 window.onload = function() {
-
   var absolute = document.getElementById('absolute');
   var alpha = document.getElementById('alpha');
   var beta = document.getElementById('beta');
   var gamma = document.getElementById('gamma');
-
-  console.log(gamma)
   window.addEventListener('deviceorientation', handleOrientation);
 }
 
@@ -21,5 +18,4 @@ function handleOrientation(event) {
   alpha.innerHTML = alphaValue;
   beta.innerHTML = betaValue;
   gamma.innerHTML = gammaValue;
-
 }
